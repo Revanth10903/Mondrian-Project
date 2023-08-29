@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      margin: 0px;
+      padding: 0px;
+    }
+    .container{
+      display:grid;
+      height:748px;
+      width:748px;
+      gap:9px;
+      grid-template-columns: 320px 193px 158px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      background-color: #000;
+    }
+    .reddiv{
+      background-color: #E72F24;
+    }
+    .greydiv{
+      grid-column: span 3;
+      background-color: #F0F1EC;
+    }
+    .greydiv2{
+      grid-column: span 1;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .graydi{
+      grid-column: span 2;
+      grid-row: span 2;
+      background-color: #F0F1EC;
+    }
+    .bluediv{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .greydiv3{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .greydiv4{
+      grid-column: span 1;
+      background-color: #F0F1EC;
+    }
+    .blackdiv{
+      background-color: #F9D01E;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="reddiv"></div>
+    <div class="greydiv"></div>
+    <div class="greydiv2"></div>
+    <div class="graydi"></div>
+    <div class="bluediv"></div>
+    <div class="greydiv3"></div>
+    <div class="greydiv4"></div>
+    <div class="blackdiv"></div>
+  </div>
+</body>
+
+</html>
